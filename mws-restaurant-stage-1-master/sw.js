@@ -24,7 +24,7 @@ self.addEventListener('install', function(event) {
   );
 });
 
-//
+// Dealing with response of the request 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
